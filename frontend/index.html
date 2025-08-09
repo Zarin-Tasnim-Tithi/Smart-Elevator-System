@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Smart Elevator System</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Smart Elevator System</h1>
+
+    <!-- Emergency Mode -->
+    <div class="emergency">
+      <button id="emergencyBtn" data-state="off">Enter Emergency Mode</button>
+    </div>
+
+    <div class="elevator-container">
+      <!-- Elevator Shaft -->
+      <div class="elevator-shaft" id="elevatorShaft">
+        <div class="elevator" id="elevator">
+          <div class="door left-door"></div>
+          <div class="door right-door"></div>
+        </div>
+        <div class="floors">
+          <div class="floor" style="bottom: 0;">1</div>
+          <div class="floor" style="bottom: 100px;">2</div>
+          <div class="floor" style="bottom: 200px;">3</div>
+          <div class="floor" style="bottom: 300px;">4</div>
+          <div class="floor" style="bottom: 400px;">5</div>
+        </div>
+      </div>
+
+      <!-- Side Panel: Floor Buttons & Roles -->
+      <div class="side-panel" id="sidePanel">
+        <div class="floor-buttons">
+          <button class="floor-button" data-floor="5">5</button>
+          <button class="floor-button" data-floor="4">4</button>
+          <button class="floor-button" data-floor="3">3</button>
+          <button class="floor-button" data-floor="2">2</button>
+          <button class="floor-button" data-floor="1">1</button>
+        </div>
+        <div class="role-buttons">
+          <button class="role-btn active" data-role="user">Student</button>
+          <button class="role-btn" data-role="vip">Teacher</button>
+          <button class="role-btn" data-role="admin">VIP</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Hidden input to hold selected role -->
+    <input type="hidden" id="selectedRole" value="user" />
+
+    <!-- Status -->
+    <div class="status">
+      <p>Queue: <span id="queue">[]</span></p>
+      <p>Last Stop Time: <span id="floorTime">N/A</span></p>
+    </div>
+  </div>
+
+  <div id="floorDisplay">1</div>
+<audio id="dingAudio" src="ding.mp3" preload="auto"></audio>
+<input type="hidden" id="selectedRole" value="user">
+
+  <script src="app.js"></script>
+</body>
+</html>
