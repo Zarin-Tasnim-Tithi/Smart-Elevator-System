@@ -13,4 +13,5 @@ python app.py
 ### 2. Frontend
 - Open `frontend/index.html` in your browser.
 ### 3. Output
-<img width="922" height="879" alt="Screenshot 2025-08-05 211706" src="https://github.com/user-attachments/assets/9bcd6817-8d29-47d8-b508-8a67d1c96217" /
+<img width="922" height="879" alt="Screenshot 2025-08-05 211706" src="https://github.com/user-attachments/assets/62d7ae2d-d82c-48ae-99cb-e1d31a437f1a" />
+ 
